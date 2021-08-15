@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{.Site.Lang}}" lang="{{.Site.Lang}}">
     <head>
         {{template "head" .}}
-        <meta name="keywords" content="{{.Site.Title}}, {{.Site.Subtitle}}">
-        <meta name="description" content="{{.Site.Subtitle}}">
-        <meta name="author" content="{{.Author.Name}}">
+        <meta name="keywords" content="{{.Site.Title}}, {{.Site.Subtitle}}"/>
+        <meta name="description" content="{{.Site.Subtitle}}"/>
+        <meta name="author" content="{{.Author.Name}}"/>
         <title>{{.Site.Title}}</title>
     </head>
     <body>
@@ -37,6 +37,6 @@
             </article>
         </article>
         {{template "footer" .}}
+        <script src="{{.Site.Root}}/bundle/index.js"></script>
     </body>
-    <script src="{{.Site.Root}}/bundle/index.js"></script>
 </html>

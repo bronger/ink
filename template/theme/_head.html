@@ -1,11 +1,4 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
-<meta name="renderer" content="webkit">
-<meta name="google" value="notranslate">
-<meta name="robots" content="index,follow">
-
+<meta charset="utf-8"/>
 
 {{ $imgurl := printf "%s%s" .Site.Url .Site.Logo}}
 {{ if .Image }}
@@ -18,29 +11,25 @@
 {{ end }}
 
 <!-- Twitter -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="{{.Title}}">
-<meta name="twitter:description" content="{{$subtitle}}">
-<meta name="twitter:image:src" content="{{$imgurl}}">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="{{.Title}}"/>
+<meta name="twitter:description" content="{{$subtitle}}"/>
+<meta name="twitter:image:src" content="{{$imgurl}}"/>
 <!-- Facebook -->
-<meta property="og:url" content="{{.Site.Url}}">
-<meta property="og:title" content="{{.Title}}">
-<meta property="og:description" content="{{$subtitle}}">
-<meta property="og:site_name" content="{{.Site.Title}}">
-<meta property="og:image" content="{{$imgurl}}">
-<meta property="og:type" content="website">
-<meta name="robots" content="noodp">
-<!-- Google Plus -->
-<meta itemprop="name" content="{{.Title}}">
-<meta itemprop="description" content="{{$subtitle}}">
-<meta itemprop="image" content="{{$imgurl}}">
+<meta property="og:url" content="{{.Site.Url}}"/>
+<meta property="og:title" content="{{.Title}}"/>
+<meta property="og:description" content="{{$subtitle}}"/>
+<meta property="og:site_name" content="{{.Site.Title}}"/>
+<meta property="og:image" content="{{$imgurl}}"/>
+<meta property="og:type" content="website"/>
+<meta name="robots" content="noodp"/>
 <!-- Canonical URL -->
-<link rel="canonical" href="{{.Site.Url}}">
+<link rel="canonical" href="{{.Site.Url}}"/>
 
-<link rel="shortcut icon" href="{{.Site.Root}}/favicon.png">
-<link rel="apple-itouch-icon" href="{{.Site.Root}}/favicon.png">
-<link rel="stylesheet" href="{{.Site.Root}}/bundle/index.css">
-<script type="text/javascript">
+<link rel="shortcut icon" href="{{.Site.Root}}/favicon.svg"/>
+<link rel="apple-itouch-icon" href="{{.Site.Root}}/favicon.svg"/>
+<link rel="stylesheet" href="{{.Site.Root}}/bundle/index.css"/>
+<script>
     var timeSinceLang = {
         year: '{{i18n "since_year"}}',
         month: '{{i18n "since_month"}}',
@@ -52,7 +41,7 @@
     var root = '{{.Site.Root}}';
 </script>
 {{if .Develop}}
-<script type="text/javascript">
+<script>
     var conn, reloadTimer, connectTimer;
     var connect = function() {
         conn = new WebSocket('ws://' + location.host + '/live');
