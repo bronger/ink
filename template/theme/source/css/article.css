@@ -33,7 +33,8 @@
       .tags {
         @mixin font-main;
         .tag {
-          margin-right: 5px;
+          margin-left: 0.5em;
+          margin-right: 0.5em;
           color: $grey;
           text-decoration: none;
         }
